@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TimePickerDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorControlActivated">@color/colorAccent</item> <!-- Color of the selected time -->
+        <item name="android:colorControlHighlight">@color/colorAccent</item> <!-- Color of the selection handle -->
+        <item name="android:textColorPrimary">@android:color/white</item> <!-- Text color for AM/PM and selected time -->
+        <item name="android:colorBackground">@color/colorPrimaryDark</item> <!-- Background color of the dialog -->
+    </style>
+
+</resources>

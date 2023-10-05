@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Task Name TextInputLayout and EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskNameLayout"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taskEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task name"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dueDateLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Due date (DD/MM/YYYY)"
+        app:layout_constraintTop_toBottomOf="@id/taskNameLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp"
+        app:startIconDrawable="@drawable/calendar_month"
+        >
+
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dueDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:maxLines="1"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dueTimeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Due time (HH:MM AM/PM)"
+        app:layout_constraintTop_toBottomOf="@id/dueDateLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        app:startIconDrawable="@drawable/access_time"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dueTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:maxLines="1"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Task Description TextInputLayout and EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskDescriptionLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dueTimeLayout"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taskDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task description" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ... Other views ... -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

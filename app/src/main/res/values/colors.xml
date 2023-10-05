@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#7B7B7B</color>
+    <color name="Queen_blue">#3967AA</color>
+    <color name="Grape">#5523AA</color>
+    <color name="Dark_Cornflower_Blue">#1D3C8E</color>
+    <color name="purple_heart">#6A3CAA</color>
+    <color name="Charleston_green">#232B2B</color>
+    <color name="Charcoal">#36454F</color>
+    <color name="Denim">#151E3D</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+
+
+</resources>
